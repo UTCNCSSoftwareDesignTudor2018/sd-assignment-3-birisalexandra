@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BlogApp.BlogApp.presentation.controller.WriterViewController">
+   <children>
+      <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back! " textAlignment="CENTER" wrappingWidth="198.13671875">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="46.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Abstract:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Body:">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="title" layoutX="100.0" layoutY="73.0" prefHeight="25.0" prefWidth="222.0" />
+      <TextArea fx:id="abstractPart" layoutX="100.0" layoutY="115.0" prefHeight="71.0" prefWidth="222.0" />
+      <TextArea fx:id="body" layoutX="100.0" layoutY="200.0" prefHeight="129.0" prefWidth="222.0" />
+      <Button fx:id="insert" layoutX="169.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonInsert" text="Insert article " />
+      <Text layoutX="362.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose article to delete" textAlignment="CENTER" wrappingWidth="198.13671875">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="delete" layoutX="426.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleButtonDelete" prefHeight="25.0" prefWidth="63.0" text="Delete" />
+      <ComboBox fx:id="comboBoxDelete" layoutX="363.0" layoutY="109.0" prefHeight="25.0" prefWidth="189.0" />
+      <Text layoutX="362.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose article to update" textAlignment="CENTER" wrappingWidth="198.13671875">
+         <font>
+            <Font name="Arial Unicode MS" size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="comboBoxUpdate" layoutX="363.0" layoutY="240.0" prefHeight="25.0" prefWidth="189.0" />
+      <Button fx:id="update" layoutX="410.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleButtonUpdate" prefHeight="25.0" prefWidth="96.0" text="Update body" />
+      <Button fx:id="back" layoutX="430.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonBack" prefHeight="25.0" prefWidth="63.0" text="Back" />
+   </children>
+</AnchorPane>
